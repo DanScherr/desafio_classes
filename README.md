@@ -13,8 +13,9 @@
 
 ## <b>Classes Base</b>
 
-### <b>class Banco:</b>
+<code>
 
+### <b>class Banco:</b>
     def __init__(self, nome_banco:str):
 
         self.nome = nome
@@ -96,7 +97,7 @@
         '''Pagar fatura, reistituir limite'''
         pass
     
-
+</code>
 ***
 
 ## **Desafio desenvolvido por:**
