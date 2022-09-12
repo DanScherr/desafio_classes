@@ -98,4 +98,7 @@
         pass
     
 
+***
 
+## <b>Integrantes</b>
+* ### Daniel Scheicher; Harão Tavares; Victoria Gomes;
