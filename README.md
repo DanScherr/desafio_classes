@@ -3,14 +3,13 @@
 
 ***
 
-<br>
 
 ## Desafio Banco
 **Descrição:** Para práticar o aprendizado de Classes e Objetos iremos trabalhar com a representação de um Banco e suas funcionalidades.
-<br>
+
 
 ***
-<br>
+
 
 ## <b>Classes Base</b>
 
