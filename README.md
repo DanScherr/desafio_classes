@@ -100,7 +100,7 @@
 </code>
 
 ***
-S
+
 ## **Desafio desenvolvido por:**
 * #### Daniel Soares <i>-> Data Engineer</i>
 
