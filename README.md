@@ -1,17 +1,17 @@
-# Trilha Endenharia de Dados - IBM - Classes e Orientação a Objetos
-* ##### Setembro 2022
+# <b><center>Trilha Endenharia de Dados - IBM - Classes e Orientação a Objetos</b>
+##### <center>  Setembro 2022
 
 ***
 
 
-## Desafio Banco
+## <b><center> Desafio Banco:</b>
 * **Descrição:** Para práticar o aprendizado de Classes e Objetos iremos trabalhar com a representação de um Banco e suas funcionalidades.
 
 
 ***
 
 
-## <b>Classes Base</b>
+## <center> <b>Classes Base:</b>
 
 <code>
 
@@ -101,8 +101,26 @@
 
 ***
 
-## **Desafio desenvolvido por:**
+## <center> **Desafio desenvolvido por:**
 * #### Daniel Soares <i>-> Data Engineer</i>
 
-## <b>Resolvido pelos integrantes:</b>
+## <center><b>Resolvido pelos integrantes:</b>
 * #### Daniel Scheicher; Harão Tavares; Victoria Gomes; <i>-> Interns</i>
+
+---
+
+## <center> **Método:**
+1. Por conta do desafio ter **3 (três) classes** e **3 (três) integrantes**, *cada integrante irá desenvolver uma classe*, para que todos tenham a oportunidade de serem protagonistas no projeto.
+2. Também serão realizadas **Dailys** *às 10hrs da manhã*, para que os integrantes possam alinhar o andamento e colaborarem em grupo quanto a sugestões e eventuais dúvidas.
+3. Por fim, será usado o **git e o github** para fins de descentralização e autonomia de desenvolvimento de código.
+
+## <center>**Data de Entrega:**
+* 16/09/2022  ->  totalizando 5 (cinco) dias úteis de desenvolvimento e 1 (uma) semana desde a entrega do desafio.
+
+## <center>**Resultados:**
+* A definir
+
+## <center>**Conclusão:**
+* A definir
+
+#  <b><center>The end</center></b>
