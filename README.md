@@ -1,11 +1,11 @@
 # Trilha Endenharia de Dados - IBM - Classes e Orientação a Objetos
-##### Setembro 2022
+* ##### Setembro 2022
 
 ***
 
 
 ## Desafio Banco
-**Descrição:** Para práticar o aprendizado de Classes e Objetos iremos trabalhar com a representação de um Banco e suas funcionalidades.
+* **Descrição:** Para práticar o aprendizado de Classes e Objetos iremos trabalhar com a representação de um Banco e suas funcionalidades.
 
 
 ***
