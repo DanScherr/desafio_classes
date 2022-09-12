@@ -100,9 +100,9 @@
 </code>
 
 ***
-
+S
 ## **Desafio desenvolvido por:**
-* ### Daniel Soares <i>-> Data Engineer</i>
+* #### Daniel Soares <i>-> Data Engineer</i>
 
 ## <b>Resolvido pelos integrantes:</b>
-* ### Daniel Scheicher; Harão Tavares; Victoria Gomes; <i>-> Interns</i>
+* #### Daniel Scheicher; Harão Tavares; Victoria Gomes; <i>-> Interns</i>
