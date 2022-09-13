@@ -112,7 +112,10 @@
 ## <center> **Método:**
 1. Por conta do desafio ter **3 (três) classes** e **3 (três) integrantes**, *cada integrante irá desenvolver uma classe*, para que todos tenham a oportunidade de serem protagonistas no projeto.
 2. Também serão realizadas **Dailys** *às 10hrs da manhã*, para que os integrantes possam alinhar o andamento e colaborarem em grupo quanto a sugestões e eventuais dúvidas.
-3. Por fim, será usado o **git e o github** para fins de descentralização e autonomia de desenvolvimento de código.
+3. Além disso, será usado o **git e o github** para fins de descentralização e autonomia de desenvolvimento de código.
+4. E, por fim, desenvolveu-se também um **diagrama UML** para representar as classes e suas relações.
+
+![UML Diagram](/13_09_22-Diagrama-UML.png)
 
 ## <center>**Data de Entrega:**
 * 16/09/2022  ->  totalizando 5 (cinco) dias úteis de desenvolvimento e 1 (uma) semana desde a entrega do desafio.
