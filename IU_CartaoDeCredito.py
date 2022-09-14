@@ -1,4 +1,4 @@
-from Class_CartaoDeCredito import CartaoDeCredito
+import Class_CartaoDeCredito
 import classteste
 
 # Vamos supor que já estamos logados na conta, que será feito no classteste.py 
