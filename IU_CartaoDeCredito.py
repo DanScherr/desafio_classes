@@ -1,5 +1,8 @@
+import Class_CartaoDeCredito
+import classteste
 
-victoria_deb = CartaoDeCredito("Victoria", 1000.0)
+# Vamos supor que já estamos logados na conta, que será feito no classteste.py 
+#   através do método 'acessar_conta'
 
 comando_inicial = input(''' Digite o número do que deseja realizar 
                             1 - comprar, 
