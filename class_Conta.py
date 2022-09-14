@@ -1,4 +1,5 @@
 # ------------ IMPORTING -------------
+import sys
 # Imports of structural classes
 from classteste import Banco
 from Class_CartaoDeCredito import CartaoDeCredito
@@ -38,7 +39,8 @@ class Conta:
         pass
 
     def set_cpf(self, cpf) -> None:
-        self.cpf = cpf
+        cpf = Depena_String(cpf)
+        self.cpf = cpf.cpf()
         pass
     
     def get_renda(self) -> float:
@@ -131,3 +133,7 @@ class Conta:
                 conta.set_saldo(qtd)
                 return True
         pass
+
+if __name__ == '__main__':
+    # Execute when the module is not initialized from an import statement.
+    sys.exit(main())
