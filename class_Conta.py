@@ -1,5 +1,12 @@
+# ------------ IMPORTING -------------
+# Imports of structural classes
+from classteste import Banco
+from Class_CartaoDeCredito import CartaoDeCredito
+# Imports of suporting classes
 from class_Depena_String import Depena_String
 
+
+# ------------ DEFINING CLASS ------------
 class Conta:
 
 # TODO: Criar construtor
@@ -25,7 +32,7 @@ class Conta:
 
     def set_nome(self, nome) -> None:
         nome = Depena_String(nome)
-        self.nome = nome.sem_espacos
+        self.nome = nome.string
         pass
 
     def get_cpf(self) -> str:
