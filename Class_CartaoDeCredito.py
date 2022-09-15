@@ -9,7 +9,7 @@ class CartaoDeCredito:
         self.__limite_cartao = limite_total
         self.limite_atual    = limite_total
 
-        self.valor_fatura          = 0.0
+        self.valor_fatura    = 0.0
 
 
     def comprar(self, valor_compra: float) -> bool:
@@ -19,7 +19,7 @@ class CartaoDeCredito:
         if (self.valor_compra <= self.limite_atual):
 
             self.limite_atual = self.limite_atual - self.valor_compra
-            self.valor_fatura       = self.valor_fatura + self.valor_compra
+            self.valor_fatura = self.valor_fatura + self.valor_compra
 
             return "Compra efetuada"
 
@@ -52,6 +52,7 @@ class CartaoDeCredito:
 
             self.valor_fatura = self.valor_fatura - valor_pagar_fatura
             self.limite_atual = self.limite_atual - self.valor_fatura
+            
             print("Lamentamos que não seja dinheiro o suficiente.")
             print(f"Ainda faltam R${self.valor_fatura} a serem pagos da fatura.")
             print(f"Seu limite atual fica de R${self.limite_atual}.")
