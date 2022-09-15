@@ -1,7 +1,8 @@
 # ------------ IMPORTING -------------
+from Class_CartaoDeCredito import CartaoDeCredito
 # Imports of suporting classes
 from class_Depena_String import Depena_String
-from Class_CartaoDeCredito import CartaoDeCredito
+
 
 # ------------ DEFINING CLASS ------------
 class Conta:
@@ -75,7 +76,9 @@ class Conta:
     def criar_cartao_de_credito(self) -> CartaoDeCredito:
         '''Criar objeto cartao de credito na conta, dados limite e nome do cartão de crédito, chamará metodo de análise de crédito do banco
         para definir limite'''
+        # Instancia uma variavel-objeto do tipo cartao de credito
         novo_cartao_de_credito = CartaoDeCredito('exemplo1', self.get_renda()*1.5)
+        # Adiciona variavel-objeto ao atributo lista_cartoes_de_credito
         self.lista_cartoes_de_credito.append(novo_cartao_de_credito)
         pass
 
@@ -113,6 +116,11 @@ class Conta:
         pass
 
     def criar_alterar_chave_pix(self, nova_chave_pix:str) -> bool:
+        # Se tipo é igual string
         if ( type(nova_chave_pix) == str ):
             self.set_chave_pix(nova_chave_pix)
+            return True
+        # Caso contrário
+        else:
+            return False
         pass
