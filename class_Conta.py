@@ -1,7 +1,4 @@
 # ------------ IMPORTING -------------
-import sys
-# Imports of structural classes
-from classteste import Banco
 from Class_CartaoDeCredito import CartaoDeCredito
 # Imports of suporting classes
 from class_Depena_String import Depena_String
@@ -75,7 +72,6 @@ class Conta:
         self.saldo = saldo
         pass
 
-
 # TODO: Métodos da classe conta
     def criar_cartao_de_credito(self) -> CartaoDeCredito:
         '''Criar objeto cartao de credito na conta, dados limite e nome do cartão de crédito, chamará metodo de análise de crédito do banco
@@ -121,19 +117,3 @@ class Conta:
         if ( type(nova_chave_pix) == str ):
             self.set_chave_pix(nova_chave_pix)
         pass
-
-    def fazer_pix(self, chave_pix_destino:str, qtd:float, banco_destino:Banco) -> bool:
-        '''Dada um objeto de conta origem, e uma chave pix destino, e quantidade da transferencia, fazer redução no saldo de uma conta e aumento de saldo na conta destino'''
-        for conta in banco_destino.lista_clientes:
-            if (( conta.get_chave_pix() != chave_pix_destino ) or
-                ( self.get_saldo() < qtd )):
-                return False
-            else:
-                self.set_saldo(self.get_saldo() - qtd)
-                conta.set_saldo(qtd)
-                return True
-        pass
-
-if __name__ == '__main__':
-    # Execute when the module is not initialized from an import statement.
-    sys.exit(main())
