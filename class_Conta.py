@@ -6,7 +6,7 @@ from class_Depena_String import Depena_String
 
 # ------------ DEFINING CLASS ------------
 class Conta:
-
+    
 
 # TODO: Criar construtor
     def __init__(self, nome:str, cpf:str, senha:str, renda:float, chave_pix:str, saldo:float) -> None:

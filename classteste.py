@@ -9,13 +9,14 @@ class Banco:
         self.lista_clientes = list()
 
     
-    def cadastrar_cliente(self, cpf: str, senha: str, renda:float) -> bool:
+    def cadastrar_cliente(self, nome: str, cpf: str, senha: str, renda:float, chave_pix: str, saldo: float) -> bool:
         '''Criar um objeto conta dado nome, cpf, senha e renda'''
-        cadastro = self.lista_clientes.append(Conta)
-        
-
-
-        return self.lista_clientes
+        # Primeiro: instanciar um objeto da classe cliente
+        novo_cliente = Conta(nome, cpf, senha, renda, chave_pix, saldo)
+        # Segundo: adiciono objeto cliente recem criado à lista lista_clientes
+        self.lista_clientes.append(novo_cliente)
+        # Terceiro: retornar confirmação
+        return True
 
     def acessar_conta(self, cpf:str, senha:str) -> Conta :
         '''Dado um cpf e senha, procurar a conta na lista de clientes e retornar a conta'''
