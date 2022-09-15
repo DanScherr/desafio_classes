@@ -37,7 +37,6 @@ class CartaoDeCredito:
     def checar_limite(self):
         return self.limite_atual
 
-
     def pagar_fatura(self, conta:Conta):       # -> bool
         '''Pagar fatura, reistituir limite'''
        
