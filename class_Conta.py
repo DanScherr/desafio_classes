@@ -1,8 +1,7 @@
 # ------------ IMPORTING -------------
-from Class_CartaoDeCredito import CartaoDeCredito
 # Imports of suporting classes
 from class_Depena_String import Depena_String
-
+from Class_CartaoDeCredito import CartaoDeCredito
 
 # ------------ DEFINING CLASS ------------
 class Conta:
