@@ -20,13 +20,18 @@ class Banco:
 
     def acessar_conta(self, cpf:str, senha:str) -> Conta :
         '''Dado um cpf e senha, procurar a conta na lista de clientes e retornar a conta'''
-        for acessar in Conta:
-            if cpf == cpf:
-                print(f'Sua conta e {Conta}')
-            if senha == senha:
-                print(f'sua conta e {Conta}')
+        # Primeiro: percorrer lista de clientes do banco
+        for objeto in self.lista_clientes:
+            # Segundo: comparar parametros
+            if( objeto.cpf == cpf and 
+                objeto.senha == senha ):
+                # Terceiro: retorna caso encontrar
+                return objeto
+            # Segundo: caso contrário
+            else:
+                # Terceiro: retorna nada
+                return None
             
-            return acessar
 
     def analisar_credito(self, conta: Conta.get_renda) :
         for i in Conta.get_renda:
