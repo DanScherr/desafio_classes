@@ -37,12 +37,11 @@ class CartaoDeCredito:
     def checar_limite(self):
         return self.limite_atual
 
-    def pagar_fatura(self, conta:Conta):       # -> bool
+
+    def pagar_fatura(self, conta:Conta, valor_pagar_fatura:float):       # -> bool
         '''Pagar fatura, reistituir limite'''
        
-        valor_pag_fatura = float(input("Digite o valor da fatura a ser pago: "))
-#        self.valor_fatura = self.valor_fatura - valor_pag_fatura
-
+#        valor_pag_fatura = float(input("Digite o valor da fatura a ser pago: "))
 
         if (valor_pag_fatura >= self.valor_fatura):
 
