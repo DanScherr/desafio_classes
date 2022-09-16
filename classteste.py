@@ -34,14 +34,17 @@ class Banco:
                 return None
             
 
-    def analisar_credito(self):
+    def analisar_credito(self, cpf:str):
         for i in self.lista_clientes:
-            if i.renda >= 2000:
-                limite_cartao = i.renda * 0.3
-               
-            else: 
-                limite_cartao = i.renda * 0.1
-
+            if i.cpf == cpf:
+                if i.renda >= 2000:
+                    limite_cartao = i.renda * 0.3
+                    break
+                else: 
+                    limite_cartao = i.renda * 0.1
+                    break
+            else:
+                return None
         return limite_cartao
       
 
