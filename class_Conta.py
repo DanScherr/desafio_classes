@@ -88,34 +88,38 @@ class Conta:
     def pagar_boleto(self, valor: float) -> bool:
         '''Pagar boleto dado valor'''
         # Se saldo corrente é menor que a qtd desejada de sacar, retorna false
-        if (( self.get_saldo() < valor ) and
-            ( type(valor) != float )):
-            return False
-        # Caso contrário subtrai o valor da conta e retorna true
-        else:
+        if (( self.get_saldo() >= valor ) and 
+            ( ( type(valor) == float ) or 
+              ( type(valor) == int   )  )    ):
             self.set_saldo(self.get_saldo() - valor)
             return True
+        # Caso contrário subtrai o valor da conta e retorna true
+        else:
+            return False
         pass
     
-    def sacar_dinheiro(self, qtd:float) -> bool:
+    def sacar_dinheiro(self, valor) -> bool:
         # Se saldo corrente é menor que a qtd desejada de sacar, retorna false
-        if (( self.get_saldo() < qtd ) and 
-            ( type(qtd) != float )):
-            return False
+        if (( self.get_saldo() >= valor ) and 
+            ( ( type(valor) == float ) or 
+              ( type(valor) == int   )  )    ):
+            self.set_saldo(self.get_saldo() - valor)
+            return True
         # Caso contrário subtrai o valor da conta e retorna true
         else:
-            self.set_saldo(self.get_saldo() - qtd)
-            return True
+            return False
         pass 
 
-    def depositar_dinheiro(self, qtd:float) -> bool:
+    def depositar_dinheiro(self, valor:float) -> bool:
         # Se saldo corrente é menor que a qtd desejada de depositar, retorna false
-        if (type(qtd) != float):
-            return False
+        if (( self.get_saldo() >= valor ) and 
+            ( ( type(valor) == float ) or 
+              ( type(valor) == int   )  )    ):
+            self.set_saldo(self.get_saldo() + valor)
+            return True
         # Caso contrário subtrai o valor da conta e retorna true
         else:
-            self.set_saldo(self.get_saldo() + qtd)
-            return True
+            return False
         pass
 
     def criar_alterar_chave_pix(self, nova_chave_pix:str) -> bool:
