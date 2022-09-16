@@ -57,4 +57,3 @@ class CartaoDeCredito:
             print(f"Ainda faltam R${self.valor_fatura} a serem pagos da fatura.")
             print(f"Seu limite atual fica de R${self.limite_atual}.")
 
-
