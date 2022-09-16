@@ -121,7 +121,60 @@
 * 16/09/2022  ->  totalizando 5 (cinco) dias úteis de desenvolvimento e 1 (uma) semana desde a entrega do desafio.
 
 ## <center>**Resultados:**
-* A definir
+> * Aprendizado:
+    <ol>
+        <li>**Escopo:** Foi criado um programa o qual, através das classes Banco, Conta e CartaDeCredito, é possível efetuar o cadastro de clientes, fazer o levamentamento dos dados dos mesmos e gerar cartões de crédito com analise de disponibilidade de crédito.<br></li>
+        <li>**Daily**: 
+            <ul>
+                <li>
+                    Bom: Comunicação efetiva para desenvolvimento do projeto, Alinhamento para conhecimento mútuo, Contribuição continua, oportunidade de um horario fixo para possibilidar ajuda planeja do Daniel (desafio desenvolvido por);
+                </li>
+                <li> 
+                    Ruim: Sem gestor a parte para conduzir conteúdo, objetividade e tempo;
+                </li>
+                <li>
+                    O que poderia manter: Efetividade de comunicação, bom relacionamento entre os integrantes e horário;
+                </li>
+                <li>
+                    O que poderia melhorar: Prestar mais atenção com tempo, conteúdo e objetividade;
+                </li>
+            </ul>
+        </li>
+        <li>**Git/GitHub**:
+            <ul>
+                <li>
+                    Bom: Aprendemos a solucionar problemas, paciência, documentação, conhecimento de desenvolvimento de codigo de forma colaborativa, resolver conflitos de codigo, organização de codigo, versionamento, cada um pode trabalhar de forma separada e ter sincronicidade de código;
+                </li>
+                <li> 
+                    Ruim: Conflitos de codigo, dificuldades do primeiro contato, VSCode (nem todo mundo usava o VSCode para o git);
+                </li>
+                <li>
+                    O que poderia manter: Organizacao, versionamento, colaboracao sincronizada;
+                </li>
+                <li>
+                    O que poderia mudar: Aprender mais sobre Git e Comandos Linux;
+                </li>
+            </ul>
+        </li>
+        <li>**Diagrama UML**: 
+            <ul>
+                <li>
+                    Bom: Ficou bonito no README.md;
+                </li>
+                <li> 
+                    Ruim: Só o Daniel fez;
+                </li>
+                <li>
+                    O que poderia manter: O README.md bonito;
+                </li>
+                <li>
+                    O que poderia mudar: Todo mundo poderia ter contribuido;<br>
+                </li>
+            </ul>
+        </li>
+    </ol>
+
+
 
 ## <center>**Conclusão:**
 * A definir
