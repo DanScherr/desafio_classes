@@ -162,13 +162,13 @@
                     Bom: Ficou bonito no README.md;
                 </li>
                 <li> 
-                    Ruim: Só o Daniel fez;
+                    Ruim: Apenas um integrante realizou a construção, pois já tinha o conhecimento, e, por isso, os outros participantes não tiveram oportunidade de aprendizado nesta construção;
                 </li>
                 <li>
                     O que poderia manter: O README.md bonito;
                 </li>
                 <li>
-                    O que poderia mudar: Todo mundo poderia ter contribuido;<br>
+                    O que poderia mudar: A construção poderia ter sido feita de forma conjunta para que todo mundo aprendesse um pouquinho;<br>
                 </li>
             </ul>
         </li>
