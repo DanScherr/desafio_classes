@@ -14,46 +14,52 @@ class CartaoDeCredito:
 
     def comprar(self, valor_compra: float) -> bool:
 
-        self.valor_compra = valor_compra
+        if (valor_compra <= self.limite_atual):
 
-        if (self.valor_compra <= self.limite_atual):
+            self.limite_atual = self.get_limite() - valor_compra
+            self.valor_fatura = self.get_valor_fatura() + valor_compra
 
-            self.limite_atual = self.limite_atual - self.valor_compra
-            self.valor_fatura = self.valor_fatura + self.valor_compra
-
-            return "Compra efetuada"
+            return True
 
         else:
-            return "Limite Insuficiente"
+            return False
 
 
-    def consultar_valor_fatura(self):
+    def get_valor_fatura(self):
         return self.valor_fatura
 
+    def set_fatura(self, valor_fatura):
+        self.fatura = valor_fatura
 
-    def checar_limite(self):
+
+    def get_limite(self):
         return self.limite_atual
 
+    def set_limite(self, limite_atual):
+        self.limite = limite_atual
 
-    def pagar_fatura(self, conta:'Conta', valor_pagar_fatura:float):       # -> bool
+    # self.set_limite(0) -> alteramos o valor na atribuição do novo valor no parametro
+
+    def pagar_fatura(self, valor_pagar_fatura:float) -> bool :      
         '''Pagar fatura, reistituir limite'''
-       
-#        valor_pag_fatura = float(input("Digite o valor da fatura a ser pago: "))
 
-        if (valor_pagar_fatura >= self.valor_fatura):
+        if (valor_pagar_fatura >= self.get_valor_fatura()):
 
-            self.valor_fatura = 0
+            self.set_fatura(0)
             self.limite_atual = self.__limite_cartao
 
             troco = round(valor_pagar_fatura - self.valor_fatura, 2)
             print(f"Seu troco é de R${troco}.")
 
+            return True
+
         else:
 
-            self.valor_fatura = self.valor_fatura - valor_pagar_fatura
-            self.limite_atual = self.limite_atual - self.valor_fatura
+            self.valor_fatura = self.get_valor_fatura() - valor_pagar_fatura
+            self.limite_atual = self.get_limite() - self.get_valor_fatura()
             
             print("Lamentamos que não seja dinheiro o suficiente.")
-            print(f"Ainda faltam R${self.valor_fatura} a serem pagos da fatura.")
-            print(f"Seu limite atual fica de R${self.limite_atual}.")
+            print(f"Ainda faltam R${self.get_valor_fatura()} a serem pagos da fatura.")
+            print(f"Seu limite atual fica de R${self.get_limite()}.")
 
+            return False
