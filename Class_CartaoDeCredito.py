@@ -45,12 +45,13 @@ class CartaoDeCredito:
 
         if (valor_pagar_fatura >= self.get_valor_fatura()):
 
-            self.set_fatura(0)
             self.limite_atual = self.__limite_cartao
 
             troco = round(valor_pagar_fatura - self.valor_fatura, 2)
             print(f"Seu troco é de R${troco}.")
 
+            self.set_fatura(0)
+            
             return True
 
         else:
