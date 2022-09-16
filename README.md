@@ -115,7 +115,7 @@
 3. Além disso, será usado o **git e o github** para fins de descentralização e autonomia de desenvolvimento de código.
 4. E, por fim, desenvolveu-se também um **diagrama UML** para representar as classes e suas relações.
 
-![UML Diagram](/13_09_22-Diagrama-UML.png)
+![UML Diagram](Images/13_09_22-Diagrama-UML.png)
 
 ## <center>**Data de Entrega:**
 * 16/09/2022  ->  totalizando 5 (cinco) dias úteis de desenvolvimento e 1 (uma) semana desde a entrega do desafio.
