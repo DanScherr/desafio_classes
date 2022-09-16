@@ -76,8 +76,11 @@ class Conta:
     def criar_cartao_de_credito(self, banco:'Banco') -> CartaoDeCredito:
         '''Criar objeto cartao de credito na conta, dados limite e nome do cartão de crédito, chamará metodo de análise de crédito do banco
         para definir limite'''
+        # Criando um nome padronizado para cartao de credito
+        nome = self.get_nome() + str(len(self.lista_cartoes_de_credito) + 1)
         # Instancia uma variavel-objeto do tipo cartao de credito
-        novo_cartao_de_credito = CartaoDeCredito('exemplo1', banco.analisar_credito(self.get_cpf()))
+        print(f'lista: {banco.analisar_credito(self.get_cpf())}; cpf: {self.get_cpf()}')
+        novo_cartao_de_credito = CartaoDeCredito(nome, banco.analisar_credito(self.get_cpf()))
         # Adiciona variavel-objeto ao atributo lista_cartoes_de_credito
         self.lista_cartoes_de_credito.append(novo_cartao_de_credito)
         pass

@@ -39,10 +39,8 @@ class Banco:
             if i.get_cpf() == cpf:
                 if i.renda >= 2000:
                     limite_cartao = i.renda * 0.3
-                    break
+                    return limite_cartao
                 else: 
                     limite_cartao = i.renda * 0.1
-                    break
-            else:
-                return None
-        return limite_cartao
+                    return limite_cartao
+        return None
