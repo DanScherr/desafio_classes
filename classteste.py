@@ -1,3 +1,6 @@
+from class_Conta import Conta
+
+
 class Banco:
 
     def __init__(self, nome:str):
@@ -7,22 +10,28 @@ class Banco:
         self.lista_clientes = list()
 
     
-    def cadastrar_cliente(self, cpf: str, senha: str, renda:float) -> bool:
+    def cadastrar_cliente(self, nome: str, cpf: str, senha: str, renda:float, chave_pix: str, saldo: float) -> bool:
         '''Criar um objeto conta dado nome, cpf, senha e renda'''
-        cadastro = (cpf,senha,renda)
-        self.lista_clientes.append(cadastro)
-        
+        # Primeiro: instanciar um objeto da classe cliente
+        novo_cliente = Conta(nome, cpf, senha, renda, chave_pix, saldo)
+        # Segundo: adiciono objeto cliente recem criado à lista lista_clientes
+        self.lista_clientes.append(novo_cliente)
+        # Terceiro: retornar confirmação
+        return True
 
-
-        return self.lista_clientes
-
-    #def acessar_conta(self, cpf:str, senha:str)  :
+    def acessar_conta(self, cpf:str, senha:str) -> Conta :
         '''Dado um cpf e senha, procurar a conta na lista de clientes e retornar a conta'''
-        #for acessar in self.lista_clientes:
-            #if acessar.cpf = cpf
-            #rint(f'sua conta e {self.lista_clientes}')
-            
-            
+        # Primeiro: percorrer lista de clientes do banco
+        for objeto in self.lista_clientes:
+            # Segundo: comparar parametros
+            if( objeto.cpf == cpf and 
+                objeto.senha == senha ):
+                # Terceiro: retorna caso encontrar
+                return objeto
+            # Segundo: caso contrário
+            else:
+                # Terceiro: retorna nada
+                return None
             
 
     def analisar_credito(self):
