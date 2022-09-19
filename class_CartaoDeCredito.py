@@ -15,7 +15,7 @@ class CartaoDeCredito:
         
         ''' Recebemos o valor da compra do cliente e checamos se é possível executá-la
             -> Se o valor da compra for menor que o limite atual, retonamos False
-            -> Se o valor ca compra for menor ou igual ao valor do limite a compra é efetuada '''
+            -> Se o valor da compra for menor ou igual ao valor do limite a compra é efetuada '''
         if (valor_compra <= self.limite_atual):
 
             # Então atualizamos o valor do limite atual, subtraindo o valor da compra
